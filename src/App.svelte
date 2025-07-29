@@ -23,6 +23,8 @@
 <main>
   <h1 class = "main-heading">Broadway Shows 🎭</h1>
 
+  <img src = "./src/assets/broadway.jpg" alt = "Times square at night" class = "main-photo"/>
+
   <h2>Shows I've Seen</h2>
   <div class = "shows">
     {#each shows.filter(show => show.status === 'seen') as show}
