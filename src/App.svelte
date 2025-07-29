@@ -6,16 +6,151 @@
       image: './src/assets/andjuliet.JPG',
       status: "seen"
     },
-    // {
-    //   title: "& Juliet",
-    //   image: andjuliet,
-    //   status: "seen"
-    // },
-    // {
-    //   title: "& Juliet",
-    //   image: andjuliet,
-    //   status: "seen"
-    // }
+    {
+      title: "Aladdin",
+      image: './src/assets/aladdin.JPG',
+      status: "seen"
+    },
+    {
+      title: "Back to the Future",
+      image: './src/assets/bttf.JPG',
+      status: "seen"
+    },
+    {
+      title: "Beetlejuice",
+      image: andjuliet,
+      status: "seen"
+    },
+    {
+      title: "Hamilton",
+      image: './src/assets/hamilton.jpg',
+      status: "seen"
+    },
+    {
+      title: "Wicked",
+      image: './src/assets/wicked.jpg',
+      status: "want to see"
+    },
+    {
+      title: "The Lion King",
+      image: './src/assets/lionking.jpg',
+      status: "want to see"
+    },
+    {
+      title: "Moulin Rouge",
+      image: './src/assets/moulinrouge.jpg',
+      status: "want to see"
+    },
+    {
+      title: "& Juliet",
+      image: andjuliet,
+      status: "seen"
+    },
+    {
+      title: "& Juliet",
+      image: andjuliet,
+      status: "seen"
+    },
+        {
+      title: "& Juliet",
+      image: './src/assets/andjuliet.JPG',
+      status: "seen"
+    },
+    {
+      title: "Aladdin",
+      image: andjuliet,
+      status: "seen"
+    },
+    {
+      title: "& Juliet",
+      image: andjuliet,
+      status: "seen"
+    },
+    {
+      title: "& Juliet",
+      image: andjuliet,
+      status: "seen"
+    },
+    {
+      title: "Hamilton",
+      image: './src/assets/hamilton.jpg',
+      status: "seen"
+    },
+    {
+      title: "Wicked",
+      image: './src/assets/wicked.jpg',
+      status: "want to see"
+    },
+    {
+      title: "The Lion King",
+      image: './src/assets/lionking.jpg',
+      status: "want to see"
+    },
+    {
+      title: "Moulin Rouge",
+      image: './src/assets/moulinrouge.jpg',
+      status: "want to see"
+    },
+    {
+      title: "& Juliet",
+      image: andjuliet,
+      status: "seen"
+    },
+    {
+      title: "& Juliet",
+      image: andjuliet,
+      status: "seen"
+    },
+    {
+      title: "& Juliet",
+      image: './src/assets/andjuliet.JPG',
+      status: "seen"
+    },
+    {
+      title: "Aladdin",
+      image: andjuliet,
+      status: "seen"
+    },
+    {
+      title: "& Juliet",
+      image: andjuliet,
+      status: "seen"
+    },
+    {
+      title: "& Juliet",
+      image: andjuliet,
+      status: "seen"
+    },
+    {
+      title: "Hamilton",
+      image: './src/assets/hamilton.jpg',
+      status: "seen"
+    },
+    {
+      title: "Wicked",
+      image: './src/assets/wicked.jpg',
+      status: "want to see"
+    },
+    {
+      title: "The Lion King",
+      image: './src/assets/lionking.jpg',
+      status: "want to see"
+    },
+    {
+      title: "Moulin Rouge",
+      image: './src/assets/moulinrouge.jpg',
+      status: "want to see"
+    },
+    {
+      title: "& Juliet",
+      image: andjuliet,
+      status: "seen"
+    },
+    {
+      title: "& Juliet",
+      image: andjuliet,
+      status: "seen"
+    }
   ];
 
 </script>
