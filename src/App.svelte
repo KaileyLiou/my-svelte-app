@@ -113,7 +113,7 @@
     },
     {
       title: "Suffs",
-      image: './src/assets/suffs.png',
+      image: './src/assets/suffs.JPG',
       status: "seen"
     },
     {
@@ -128,7 +128,7 @@
     },
     {
       title: "The Lion King",
-      image: './src/assets/lionking.jpg',
+      image: './src/assets/lionking.png',
       status: "seen"
     },
     {
