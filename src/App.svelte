@@ -18,42 +18,87 @@
     },
     {
       title: "Beetlejuice",
-      image: andjuliet,
+      image: './src/assets/beetlejuice.JPG',
+      status: "seen"
+    },
+    {
+      title: "Charlie And The Chocolate Factory",
+      image: './src/assets/charlie.png',
+      status: "seen"
+    },
+    {
+      title: "Elf",
+      image: './src/assets/elf.JPG',
+      status: "seen"
+    },
+    {
+      title: "Frozen",
+      image: './src/assets/frozen.JPG',
+      status: "seen"
+    },
+    {
+      title: "Hadestown",
+      image: './src/assets/hadestown.jpg',
       status: "seen"
     },
     {
       title: "Hamilton",
-      image: './src/assets/hamilton.jpg',
+      image: './src/assets/hamilton.JPG',
       status: "seen"
     },
     {
-      title: "Wicked",
-      image: './src/assets/wicked.jpg',
-      status: "want to see"
-    },
-    {
-      title: "The Lion King",
-      image: './src/assets/lionking.jpg',
-      status: "want to see"
-    },
-    {
-      title: "Moulin Rouge",
-      image: './src/assets/moulinrouge.jpg',
-      status: "want to see"
-    },
-    {
-      title: "& Juliet",
-      image: andjuliet,
+      title: "Harry Potter & the Cursed Child",
+      image: './src/assets/harrypotter.JPG',
       status: "seen"
     },
     {
-      title: "& Juliet",
-      image: andjuliet,
+      title: "Illinoise",
+      image: './src/assets/illinoise.JPG',
       status: "seen"
     },
-        {
-      title: "& Juliet",
-      image: './src/assets/andjuliet.JPG',
+    {
+      title: "Into the Woods",
+      image: './src/assets/ittw.JPG',
+      status: "seen"
+    },
+    {
+      title: "Kimberly Akimbo",
+      image: './src/assets/kimberly.JPG',
+      status: "seen"
+    },
+    {
+      title: "Kinky Boots",
+      image: './src/assets/kinkyboots.png',
+      status: "seen"
+    },
+    {
+      title: "Life of Pi",
+      image: './src/assets/lifeofpi.jpg',
+      status: "seen"
+    },
+    {
+      title: "New York, New York",
+      image: './src/assets/nyny.JPG',
+      status: "seen"
+    },
+    {
+      title: "Once Upon a Mattress",
+      image: './src/assets/mattress.JPG',
+      status: "seen"
+    },
+    {
+      title: "Shucked",
+      image: './src/assets/shucked.JPG',
+      status: "seen"
+    },
+    {
+      title: "Six",
+      image: './src/assets/six.JPG',
+      status: "seen"
+    },
+    {
+      title: "Slava's Snowshow",
+      image: './src/assets/slava.JPG',
       status: "seen"
     },
     {
@@ -67,53 +112,8 @@
       status: "seen"
     },
     {
-      title: "& Juliet",
-      image: andjuliet,
-      status: "seen"
-    },
-    {
-      title: "Hamilton",
-      image: './src/assets/hamilton.jpg',
-      status: "seen"
-    },
-    {
-      title: "Wicked",
-      image: './src/assets/wicked.jpg',
-      status: "want to see"
-    },
-    {
       title: "The Lion King",
-      image: './src/assets/lionking.jpg',
-      status: "want to see"
-    },
-    {
-      title: "Moulin Rouge",
-      image: './src/assets/moulinrouge.jpg',
-      status: "want to see"
-    },
-    {
-      title: "& Juliet",
-      image: andjuliet,
-      status: "seen"
-    },
-    {
-      title: "& Juliet",
-      image: andjuliet,
-      status: "seen"
-    },
-    {
-      title: "& Juliet",
-      image: './src/assets/andjuliet.JPG',
-      status: "seen"
-    },
-    {
-      title: "Aladdin",
-      image: andjuliet,
-      status: "seen"
-    },
-    {
-      title: "& Juliet",
-      image: andjuliet,
+      image: './src/assets/lionking.png',
       status: "seen"
     },
     {
@@ -129,17 +129,17 @@
     {
       title: "Wicked",
       image: './src/assets/wicked.jpg',
-      status: "want to see"
+      status: "seen"
     },
     {
       title: "The Lion King",
       image: './src/assets/lionking.jpg',
-      status: "want to see"
+      status: "seen"
     },
     {
       title: "Moulin Rouge",
       image: './src/assets/moulinrouge.jpg',
-      status: "want to see"
+      status: "seen"
     },
     {
       title: "& Juliet",
