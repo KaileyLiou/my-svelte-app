@@ -127,28 +127,23 @@
       status: "seen"
     },
     {
-      title: "Wicked",
-      image: './src/assets/wicked.jpg',
-      status: "seen"
-    },
-    {
       title: "The Lion King",
       image: './src/assets/lionking.jpg',
       status: "seen"
     },
     {
-      title: "Moulin Rouge",
-      image: './src/assets/moulinrouge.jpg',
+      title: "The Wiz",
+      image: './src/assets/wiz.JPG',
       status: "seen"
     },
     {
-      title: "& Juliet",
-      image: andjuliet,
+      title: "Water for Elephants",
+      image: './src/assets/elephants.JPG',
       status: "seen"
     },
     {
-      title: "& Juliet",
-      image: andjuliet,
+      title: "Wicked",
+      image: './src/assets/wicked.JPG',
       status: "seen"
     }
   ];
