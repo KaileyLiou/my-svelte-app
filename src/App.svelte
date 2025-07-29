@@ -102,28 +102,28 @@
       status: "seen"
     },
     {
-      title: "Aladdin",
-      image: andjuliet,
+      title: "Spamalot",
+      image: './src/assets/spamalot.JPG',
       status: "seen"
     },
     {
-      title: "& Juliet",
-      image: andjuliet,
+      title: "SpongeBob SquarePants",
+      image: './src/assets/spongebob.JPG',
       status: "seen"
     },
     {
-      title: "The Lion King",
-      image: './src/assets/lionking.png',
+      title: "Suffs",
+      image: './src/assets/suffs.png',
       status: "seen"
     },
     {
-      title: "& Juliet",
-      image: andjuliet,
+      title: "Sweeney Todd",
+      image: './src/assets/sweeneytodd.JPG',
       status: "seen"
     },
     {
-      title: "Hamilton",
-      image: './src/assets/hamilton.jpg',
+      title: "The Illusionists - Magic of the Holidays",
+      image: './src/assets/illusionists.png',
       status: "seen"
     },
     {
