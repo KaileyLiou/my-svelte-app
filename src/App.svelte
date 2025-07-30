@@ -1,6 +1,10 @@
 <script>
 
-  
+  let theme = 'dark';
+
+  function toggleTheme() {
+    theme = theme === 'dark' ? 'light' : 'dark';
+  }
 
   let shows = [
     {
@@ -152,7 +156,12 @@
 
 </script>
 
-<main>
+<main class = {theme}>
+
+  <button on:click = {toggleTheme} class = "theme-toggle">
+    {theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+  </button>
+
   <h1 class = "main-heading">Broadway Shows 🎭</h1>
 
   <img src = "./src/assets/broadway.jpg" alt = "Times square at night" class = "main-photo"/>
@@ -180,6 +189,55 @@
 </main>
 
 <style>
+
+main.dark {
+  background-color: #1b1b2f;
+  color: #e0e0e0;
+}
+
+main.light {
+  background-color: #f5f5f5;
+  color: #1b1b1b;
+}
+
+main.dark .show-card {
+  background: #27293d;
+  color: #f0f0f0;
+}
+
+main.light .show-card {
+  background: #ffffff;
+  color: #1b1b1b;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+main.light .main-heading {
+  color: #1b1b2f;
+}
+
+main.dark .main-heading {
+  color: #f0c808;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f0c808;
+  color: #1b1b2f;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+.theme-toggle:hover {
+  background-color: #ffe066;
+}
 
 body {
   background-color: #1b1b2f;
