@@ -1,5 +1,7 @@
 <script>
 
+  
+
   let shows = [
     {
       title: "& Juliet",
@@ -203,10 +205,10 @@ h2 {
 }
 
 .main-photo {
-  width: 80%;
-  max-height: 400px;
+  width: 70%;
+  max-height: 350px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 10px;
   margin: 0 auto 40px;
   display: block;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
@@ -215,13 +217,13 @@ h2 {
 .shows {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 24px;
+  gap: 40px;
   padding: 0 20px;
   margin-bottom: 40px;
 }
 
 .show-card {
-  background: #27293d;
+  background: #484c7c;
   padding: 15px;
   border-radius: 12px;
   text-align: center;
