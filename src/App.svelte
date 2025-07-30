@@ -270,6 +270,11 @@
   background-color: #fcf1e6; /* light background */
 }
 
+::selection {
+  background-color: #e63946;  
+  color: white;          
+}
+
 main {
   width: 100%;
   min-height: 100vh;
@@ -277,6 +282,7 @@ main {
   padding: 50px 50px;
   box-sizing: border-box;
   margin: 0 auto;
+  cursor: url('./src/assets/custom-cursor.png'), auto;
 }
 
 /* Dark mode */
