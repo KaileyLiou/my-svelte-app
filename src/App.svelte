@@ -190,6 +190,12 @@
 
 <style>
 
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 main.dark {
   background-color: #1b1b2f;
   color: #e0e0e0;
@@ -297,7 +303,8 @@ h2 {
 
 .show-card img {
   width: 100%;
-  height: auto;
+  height: 240px;
+  object-fit: cover;
   border-radius: 6px;
   margin-bottom: 10px;
 }
