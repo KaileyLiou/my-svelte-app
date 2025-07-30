@@ -346,10 +346,11 @@ main.light .theme-toggle:hover {
 /* Subheadings */
 h2 {
   font-size: 1.8rem;
-  margin: 40px 0 20px;
+  margin: 60px 0px 40px;
   text-align: center;
   font-weight: 600;
   font-family: 'Merriweather', serif;
+  text-shadow: 0 0 10px rgba(255, 183, 3, 0.3);
 }
 
 /* Main Image */
