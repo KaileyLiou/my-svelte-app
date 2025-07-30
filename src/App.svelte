@@ -190,84 +190,97 @@
 
 <style>
 
+/* General Layout */
 main {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-main.dark {
-  background-color: #1b1b2f;
-  color: #e0e0e0;
-}
-
-main.light {
-  background-color: #f5f5f5;
-  color: #1b1b1b;
-}
-
-main.dark .show-card {
-  background: #27293d;
-  color: #f0f0f0;
-}
-
-main.light .show-card {
-  background: #ffffff;
-  color: #1b1b1b;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-main.light .main-heading {
-  color: #1b1b2f;
-}
-
-main.dark .main-heading {
-  color: #f0c808;
-}
-
-.theme-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  padding: 10px 16px;
-  border: none;
-  border-radius: 8px;
-  background-color: #f0c808;
-  color: #1b1b2f;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  z-index: 10;
-  transition: background 0.3s;
-}
-
-.theme-toggle:hover {
-  background-color: #ffe066;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 60px;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #1b1b2f;
-  color: #e0e0e0;
+  background-color: #0d0b1a;
+  color: #f4f4f4;
+  width: 100%;
+  max-width: 100%;
   font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/* Dark mode */
+main.dark {
+  background-color: #0d0b1a;
+  color: #f4f4f4;
+}
+
+main.dark .main-heading,
+main.dark h2 {
+  color: #ffb703;
+}
+
+main.dark .show-card {
+  background: #1f1a3a;
+  color: #f4f4f4;
+}
+
+main.dark .show-card:hover {
+  background: #2b2250;
+}
+
+main.dark .theme-toggle {
+  background-color: #ffb703;
+  color: #0d0b1a;
+}
+
+main.dark .theme-toggle:hover {
+  background-color: #ffd166;
+}
+
+/* Light mode */
+main.light {
+  background-color: #fdfcfb;
+  color: #222222;
+}
+
+main.light .main-heading,
+main.light h2 {
+  color: #8b0000;
+}
+
+main.light .show-card {
+  background: #ffffff;
+  color: #222222;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+main.light .theme-toggle {
+  background-color: #8b0000;
+  color: #ffffff;
+}
+
+main.light .theme-toggle:hover {
+  background-color: #c62828;
+}
+
+/* Heading */
 .main-heading {
   font-size: 2.8rem;
   text-align: center;
   margin-bottom: 40px;
-  color: #f0c808;
-  text-shadow: 0 0 10px rgba(240, 200, 8, 0.3);
+  font-family: 'Playfair Display', serif;
+  text-shadow: 0 0 10px rgba(255, 183, 3, 0.3);
 }
 
+/* Subheadings */
 h2 {
-  color: #f0c808;
   font-size: 1.8rem;
   margin: 40px 0 20px;
   text-align: center;
+  font-weight: 600;
 }
 
+/* Main Image */
 .main-photo {
   width: 70%;
   max-height: 350px;
@@ -278,29 +291,46 @@ h2 {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
+/* Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+/* Grid Layout */
 .shows {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 40px;
-  padding: 0 20px;
   margin-bottom: 40px;
 }
 
+/* Cards */
 .show-card {
-  background: #484c7c;
   padding: 15px;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  margin: 0 auto;
 }
 
 .show-card:hover {
   transform: scale(1.05);
-  background: #3e4164;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
 
+/* Card Images */
 .show-card img {
   width: 100%;
   height: 240px;
@@ -309,10 +339,11 @@ h2 {
   margin-bottom: 10px;
 }
 
+/* Card Titles */
 .show-card h3 {
   font-size: 1rem;
   font-family: 'Georgia', serif;
-  color: #f0f0f0;
+  margin-top: 8px;
 }
 
 </style>
