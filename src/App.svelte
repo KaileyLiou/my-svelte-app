@@ -178,22 +178,29 @@
 </main>
 
 <style>
-  
-  /* .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
-    color: #888;
-  } */
+
+.show-card {
+  border: none;
+  padding: 15px;
+  width: 180px;
+  text-align: center;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.show-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.show-card h3 {
+  font-size: 1rem;
+  margin-top: 10px;
+  font-family: 'Georgia', serif;
+  color: #333;
+}
 
   h1 {
     font-family: Arial, sans-serif;
