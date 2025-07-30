@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite'
-import { svelte } from '@sveltejs/vite-plugin-svelte'
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import { defineConfig } from 'vite';
+import { svelte } from '@sveltejs/vite-plugin-svelte';
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: '/my-svelte-app',
-  plugins: [svelte()],
-})
+  base: '/my-svelte-app/',
+  plugins: [svelte({ preprocess: vitePreprocess() })]
+});
