@@ -1,10 +1,21 @@
 <script>
 
+  import { onMount } from 'svelte';
   let theme = 'dark';
 
   function toggleTheme() {
     theme = theme === 'dark' ? 'light' : 'dark';
+    updateBodyClass();
   }
+
+  function updateBodyClass() {
+    document.body.classList.remove('dark', 'light');
+    document.body.classList.add(theme);
+  }
+
+  onMount(() => {
+    updateBodyClass();
+  });
 
   let shows = [
     {
@@ -245,11 +256,25 @@
   overflow-x: hidden;
 } */
 
+:global(body) {
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s;
+}
+
+:global(body.dark) {
+  background-color: #0d0b1a; /* dark background */
+}
+
+:global(body.light) {
+  background-color: #fcf1e6; /* light background */
+}
+
 main {
   width: 100%;
   min-height: 100vh;
   background-color: #0d0b1a;
-  padding: 0 20px;
+  padding: 50px 50px;
   box-sizing: border-box;
   margin: 0 auto;
 }
