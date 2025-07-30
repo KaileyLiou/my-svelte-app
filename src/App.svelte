@@ -236,14 +236,14 @@
 <style>
 
 /* General Layout */
-body {
+/* body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   background-color: #0d0b1a;
   overflow-x: hidden;
-}
+} */
 
 main {
   width: 100%;
@@ -314,7 +314,7 @@ main.light .theme-toggle:hover {
   font-size: 2.8rem;
   text-align: center;
   margin-bottom: 40px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Merriweather', serif;
   text-shadow: 0 0 10px rgba(255, 183, 3, 0.3);
 }
 
@@ -324,6 +324,7 @@ h2 {
   margin: 40px 0 20px;
   text-align: center;
   font-weight: 600;
+  font-family: 'Merriweather', serif;
 }
 
 /* Main Image */
@@ -389,6 +390,7 @@ h2 {
   font-size: 1rem;
   font-family: 'Georgia', serif;
   margin-top: 8px;
+  font-style: italic;
 }
 
 </style>
