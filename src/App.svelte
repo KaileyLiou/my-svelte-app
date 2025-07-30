@@ -392,6 +392,15 @@ h2 {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
+.image-button {
+  outline: none;
+}
+
+.image-button:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
 /* Toggle Button */
 .theme-toggle {
   position: fixed;
