@@ -282,7 +282,6 @@ main {
   padding: 50px 50px;
   box-sizing: border-box;
   margin: 0 auto;
-  cursor: url('./src/assets/custom-cursor.png'), auto;
 }
 
 /* Dark mode */
