@@ -153,6 +153,21 @@
       status: "seen"
     },
     {
+      title: "Dear Evan Hansen",
+      image: './src/assets/evan.jpeg',
+      status: "want to see"
+    },
+    {
+      title: "Death Becomes Her",
+      image: './src/assets/dbh.jpeg',
+      status: "want to see"
+    },
+    {
+      title: "Hell's Kitchen",
+      image: './src/assets/hellskitchen.jpeg',
+      status: "want to see"
+    },
+    {
       title: "MJ",
       image: './src/assets/mj.JPG',
       status: "want to see"
@@ -168,13 +183,18 @@
       status: "want to see"
     },
     {
+      title: "Sunset Boulevard",
+      image: './src/assets/sunset.jpeg',
+      status: "want to see"
+    },
+    {
       title: "The Outsiders",
       image: './src/assets/outsiders.JPG',
       status: "want to see"
     },
     {
       title: "The Phantom of the Opera",
-      image: './src/assets/mj.JPG',
+      image: './src/assets/phantom.jpeg',
       status: "want to see"
     }
   ];
