@@ -275,8 +275,8 @@ main.dark .show-card:hover {
 }
 
 main.dark .theme-toggle {
-  background-color: #ffb703;
-  color: #0d0b1a;
+  background-color: #f76c6c;
+  color: #ffffff;
 }
 
 main.dark .theme-toggle:hover {
@@ -285,13 +285,13 @@ main.dark .theme-toggle:hover {
 
 /* Light mode */
 main.light {
-  background-color: #fdfcfb;
-  color: #222222;
+  background-color: #fcf1e6;
+  color: #1a1a1a;
 }
 
 main.light .main-heading,
 main.light h2 {
-  color: #8b0000;
+  color: #e63946;
 }
 
 main.light .show-card {
@@ -301,12 +301,12 @@ main.light .show-card {
 }
 
 main.light .theme-toggle {
-  background-color: #8b0000;
-  color: #ffffff;
+  background-color: #e63946;
+  color: #0d0b1a;
 }
 
 main.light .theme-toggle:hover {
-  background-color: #c62828;
+  background-color: #f76c6c;
 }
 
 /* Heading */
