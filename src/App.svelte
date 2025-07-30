@@ -151,54 +151,90 @@
       title: "Wicked",
       image: './src/assets/wicked.JPG',
       status: "seen"
+    },
+    {
+      title: "MJ",
+      image: './src/assets/mj.JPG',
+      status: "want to see"
+    },
+    {
+      title: "Moulin Rouge",
+      image: './src/assets/moulin.JPG',
+      status: "want to see"
+    },
+    {
+      title: "Once Upon a One More Time",
+      image: './src/assets/onemoretime.JPG',
+      status: "want to see"
+    },
+    {
+      title: "The Outsiders",
+      image: './src/assets/outsiders.JPG',
+      status: "want to see"
+    },
+    {
+      title: "The Phantom of the Opera",
+      image: './src/assets/mj.JPG',
+      status: "want to see"
     }
   ];
 
-</script>
+</script> 
 
-<main class = {theme}>
+  <main class = {theme}>
 
-  <button on:click = {toggleTheme} class = "theme-toggle">
-    {theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-  </button>
+    <button on:click = {toggleTheme} class = "theme-toggle">
+      {theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+    </button>
 
-  <h1 class = "main-heading">Broadway Shows 🎭</h1>
+    <h1 class = "main-heading">Broadway Shows 🎭</h1>
 
-  <img src = "./src/assets/broadway.jpg" alt = "Times square at night" class = "main-photo"/>
+    <img src = "./src/assets/broadway.jpg" alt = "Times square at night" class = "main-photo"/>
 
-  <h2>Shows I've Seen</h2>
-  <div class = "shows">
-    {#each shows.filter(show => show.status === 'seen') as show}
-      <div class = "show-card">
-        <img src = {show.image} alt = {show.title}/>
-        <h3>{show.title}</h3>
-      </div>
-    {/each}
-  </div>
+    <h2>Shows I've Seen</h2>
+    <div class = "shows">
+      {#each shows.filter(show => show.status === 'seen') as show}
+        <div class = "show-card">
+          <img src = {show.image} alt = {show.title}/>
+          <h3>{show.title}</h3>
+        </div>
+      {/each}
+    </div>
 
-  <h2>Shows I Want to See</h2>
-  <div class = "shows">
-    {#each shows.filter(show => show.status === 'want to see') as show}
-      <div class = "show-card">
-        <img src = {show.image} alt = {show.title}/>
-        <h3>{show.title}</h3>
-      </div>
-    {/each}
-  </div>
+    <h2>Shows I Want to See</h2>
+    <div class = "shows">
+      {#each shows.filter(show => show.status === 'want to see') as show}
+        <div class = "show-card">
+          <img src = {show.image} alt = {show.title}/>
+          <h3>{show.title}</h3>
+        </div>
+      {/each}
+    </div>
 
-</main>
+  </main>
 
 <style>
 
 /* General Layout */
-main {
+body {
+  margin: 0;
+  padding: 0;
   width: 100%;
-  max-width: 100%;
-  padding: 0 60px;
-  box-sizing: border-box;
+  height: 100%;
+  background-color: #0d0b1a; /* dark blue/black background */
+  overflow-x: hidden; /* prevent horizontal scroll if any */
 }
 
-body {
+main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0d0b1a; /* same background to fill entire area */
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* body {
   background-color: #0d0b1a;
   color: #f4f4f4;
   width: 100%;
@@ -206,7 +242,7 @@ body {
   font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
-}
+} */
 
 /* Dark mode */
 main.dark {
@@ -308,10 +344,11 @@ h2 {
 
 /* Grid Layout */
 .shows {
+  max-width: 1200px;
+  margin: 0 auto 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 40px;
-  margin-bottom: 40px;
 }
 
 /* Cards */
@@ -321,8 +358,6 @@ h2 {
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  max-width: 200px;
-  margin: 0 auto;
 }
 
 .show-card:hover {
