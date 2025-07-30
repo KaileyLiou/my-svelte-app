@@ -241,28 +241,18 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: #0d0b1a; /* dark blue/black background */
-  overflow-x: hidden; /* prevent horizontal scroll if any */
+  background-color: #0d0b1a;
+  overflow-x: hidden;
 }
 
 main {
   width: 100%;
   min-height: 100vh;
-  background-color: #0d0b1a; /* same background to fill entire area */
+  background-color: #0d0b1a;
   padding: 0 20px;
   box-sizing: border-box;
   margin: 0 auto;
 }
-
-/* body {
-  background-color: #0d0b1a;
-  color: #f4f4f4;
-  width: 100%;
-  max-width: 100%;
-  font-family: 'Helvetica Neue', sans-serif;
-  margin: 0;
-  padding: 0;
-} */
 
 /* Dark mode */
 main.dark {
@@ -272,7 +262,7 @@ main.dark {
 
 main.dark .main-heading,
 main.dark h2 {
-  color: #ffb703;
+  color: #e63946;
 }
 
 main.dark .show-card {
