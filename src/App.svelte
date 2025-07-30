@@ -387,7 +387,7 @@ h2 {
   max-height: 350px;
   object-fit: cover;
   border-radius: 10px;
-  margin: 0 auto 40px;
+  margin: 0 auto 20px;
   display: block;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
@@ -399,6 +399,24 @@ h2 {
 .image-button:focus:not(:focus-visible) {
   outline: none;
   box-shadow: none;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.click-hint {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #e63946;
+  margin-top: 0px;
+  font-weight: bold;
+  animation: bounce 1.5s infinite;
 }
 
 /* Toggle Button */
