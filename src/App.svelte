@@ -179,90 +179,73 @@
 
 <style>
 
-  .show-card {
-    border: none;
-    padding: 15px;
-    width: 180px;
-    text-align: center;
-    border-radius: 12px;
-    background: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-
-  .show-card:hover {
-    transform: scale(1.05);
-  }
-
-  .show-card h3 {
-    font-size: 1rem;
-    margin-top: 10px;
-    font-family: 'Georgia', serif;
-    color: #333;
-  }
-
-  h1 {
-    font-family: Arial, sans-serif;
-  }
-
-  .shows {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-
-  .show-card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 150px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-  }
-
-  .main-heading {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 40px;
-    color: #8b0000;
-  }
-
-  body {
-  background-color: #111;
-  color: #fff;
+body {
+  background-color: #1b1b2f;
+  color: #e0e0e0;
   font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
 }
 
-  h2 {
-    color: #ffd700;
-    font-size: 1.8rem;
-    margin: 40px 0 20px;
-    text-align: center;
-  }
+.main-heading {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #f0c808;
+  text-shadow: 0 0 10px rgba(240, 200, 8, 0.3);
+}
 
-  .shows {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 24px;
-    padding: 0 20px;
-    margin-bottom: 40px;
-  }
+h2 {
+  color: #f0c808;
+  font-size: 1.8rem;
+  margin: 40px 0 20px;
+  text-align: center;
+}
 
-  .main-photo {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 40px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
-  }
+.main-photo {
+  width: 80%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0 auto 40px;
+  display: block;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.shows {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.show-card {
+  background: #27293d;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+}
+
+.show-card:hover {
+  transform: scale(1.05);
+  background: #3e4164;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.show-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.show-card h3 {
+  font-size: 1rem;
+  font-family: 'Georgia', serif;
+  color: #f0f0f0;
+}
 
 </style>
