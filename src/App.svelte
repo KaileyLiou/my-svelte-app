@@ -2,6 +2,7 @@
 
   import { onMount } from 'svelte';
   let theme = 'dark';
+  import confetti from 'canvas-confetti';
 
   function toggleTheme() {
     theme = theme === 'dark' ? 'light' : 'dark';
@@ -17,198 +18,206 @@
     updateBodyClass();
   });
 
-  let shows = [
-    {
-      title: "& Juliet",
-      image: './src/assets/andjuliet.JPG',
-      status: "seen"
-    },
-    {
-      title: "Aladdin",
-      image: './src/assets/aladdin.JPG',
-      status: "seen"
-    },
-    {
-      title: "Back to the Future",
-      image: './src/assets/bttf.JPG',
-      status: "seen"
-    },
-    {
-      title: "Beetlejuice",
-      image: './src/assets/beetlejuice.JPG',
-      status: "seen"
-    },
-    {
-      title: "Charlie And The Chocolate Factory",
-      image: './src/assets/charlie.png',
-      status: "seen"
-    },
-    {
-      title: "Elf",
-      image: './src/assets/elf.JPG',
-      status: "seen"
-    },
-    {
-      title: "Frozen",
-      image: './src/assets/frozen.JPG',
-      status: "seen"
-    },
-    {
-      title: "Hadestown",
-      image: './src/assets/hadestown.jpg',
-      status: "seen"
-    },
-    {
-      title: "Hamilton",
-      image: './src/assets/hamilton.JPG',
-      status: "seen"
-    },
-    {
-      title: "Harry Potter & the Cursed Child",
-      image: './src/assets/harrypotter.JPG',
-      status: "seen"
-    },
-    {
-      title: "Illinoise",
-      image: './src/assets/illinoise.JPG',
-      status: "seen"
-    },
-    {
-      title: "Into the Woods",
-      image: './src/assets/ittw.JPG',
-      status: "seen"
-    },
-    {
-      title: "Kimberly Akimbo",
-      image: './src/assets/kimberly.JPG',
-      status: "seen"
-    },
-    {
-      title: "Kinky Boots",
-      image: './src/assets/kinkyboots.png',
-      status: "seen"
-    },
-    {
-      title: "Life of Pi",
-      image: './src/assets/lifeofpi.jpg',
-      status: "seen"
-    },
-    {
-      title: "New York, New York",
-      image: './src/assets/nyny.JPG',
-      status: "seen"
-    },
-    {
-      title: "Once Upon a Mattress",
-      image: './src/assets/mattress.JPG',
-      status: "seen"
-    },
-    {
-      title: "Shucked",
-      image: './src/assets/shucked.JPG',
-      status: "seen"
-    },
-    {
-      title: "Six",
-      image: './src/assets/six.JPG',
-      status: "seen"
-    },
-    {
-      title: "Slava's Snowshow",
-      image: './src/assets/slava.JPG',
-      status: "seen"
-    },
-    {
-      title: "Spamalot",
-      image: './src/assets/spamalot.JPG',
-      status: "seen"
-    },
-    {
-      title: "SpongeBob SquarePants",
-      image: './src/assets/spongebob.JPG',
-      status: "seen"
-    },
-    {
-      title: "Suffs",
-      image: './src/assets/suffs.JPG',
-      status: "seen"
-    },
-    {
-      title: "Sweeney Todd",
-      image: './src/assets/sweeneytodd.JPG',
-      status: "seen"
-    },
-    {
-      title: "The Illusionists - Magic of the Holidays",
-      image: './src/assets/illusionists.png',
-      status: "seen"
-    },
-    {
-      title: "The Lion King",
-      image: './src/assets/lionking.png',
-      status: "seen"
-    },
-    {
-      title: "The Wiz",
-      image: './src/assets/wiz.JPG',
-      status: "seen"
-    },
-    {
-      title: "Water for Elephants",
-      image: './src/assets/elephants.JPG',
-      status: "seen"
-    },
-    {
-      title: "Wicked",
-      image: './src/assets/wicked.JPG',
-      status: "seen"
-    },
-    {
-      title: "Dear Evan Hansen",
-      image: './src/assets/evan.jpeg',
-      status: "want to see"
-    },
-    {
-      title: "Death Becomes Her",
-      image: './src/assets/dbh.jpeg',
-      status: "want to see"
-    },
-    {
-      title: "Hell's Kitchen",
-      image: './src/assets/hellskitchen.jpeg',
-      status: "want to see"
-    },
-    {
-      title: "MJ",
-      image: './src/assets/mj.JPG',
-      status: "want to see"
-    },
-    {
-      title: "Moulin Rouge",
-      image: './src/assets/moulin.JPG',
-      status: "want to see"
-    },
-    {
-      title: "Once Upon a One More Time",
-      image: './src/assets/onemoretime.JPG',
-      status: "want to see"
-    },
-    {
-      title: "Sunset Boulevard",
-      image: './src/assets/sunset.jpeg',
-      status: "want to see"
-    },
-    {
-      title: "The Outsiders",
-      image: './src/assets/outsiders.JPG',
-      status: "want to see"
-    },
-    {
-      title: "The Phantom of the Opera",
-      image: './src/assets/phantom.jpeg',
-      status: "want to see"
-    }
-  ];
+  function handleConfettiClick() {
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
+  }
+
+let shows = [
+  {
+    title: "& Juliet",
+    image: '/my-svelte-app/assets/andjuliet.JPG',
+    status: "seen"
+  },
+  {
+    title: "Aladdin",
+    image: '/my-svelte-app/assets/aladdin.JPG',
+    status: "seen"
+  },
+  {
+    title: "Back to the Future",
+    image: '/my-svelte-app/assets/bttf.JPG',
+    status: "seen"
+  },
+  {
+    title: "Beetlejuice",
+    image: '/my-svelte-app/assets/beetlejuice.JPG',
+    status: "seen"
+  },
+  {
+    title: "Charlie And The Chocolate Factory",
+    image: '/my-svelte-app/assets/charlie.png',
+    status: "seen"
+  },
+  {
+    title: "Elf",
+    image: '/my-svelte-app/assets/elf.JPG',
+    status: "seen"
+  },
+  {
+    title: "Frozen",
+    image: '/my-svelte-app/assets/frozen.JPG',
+    status: "seen"
+  },
+  {
+    title: "Hadestown",
+    image: '/my-svelte-app/assets/hadestown.JPG',
+    status: "seen"
+  },
+  {
+    title: "Hamilton",
+    image: '/my-svelte-app/assets/hamilton.JPG',
+    status: "seen"
+  },
+  {
+    title: "Harry Potter & the Cursed Child",
+    image: '/my-svelte-app/assets/harrypotter.JPG',
+    status: "seen"
+  },
+  {
+    title: "Illinoise",
+    image: '/my-svelte-app/assets/illinoise.JPG',
+    status: "seen"
+  },
+  {
+    title: "Into the Woods",
+    image: '/my-svelte-app/assets/ittw.JPG',
+    status: "seen"
+  },
+  {
+    title: "Kimberly Akimbo",
+    image: '/my-svelte-app/assets/kimberly.JPG',
+    status: "seen"
+  },
+  {
+    title: "Kinky Boots",
+    image: '/my-svelte-app/assets/kinkyboots.png',
+    status: "seen"
+  },
+  {
+    title: "Life of Pi",
+    image: '/my-svelte-app/assets/lifeofpi.jpg',
+    status: "seen"
+  },
+  {
+    title: "New York, New York",
+    image: '/my-svelte-app/assets/nyny.JPG',
+    status: "seen"
+  },
+  {
+    title: "Once Upon a Mattress",
+    image: '/my-svelte-app/assets/mattress.JPG',
+    status: "seen"
+  },
+  {
+    title: "Shucked",
+    image: '/my-svelte-app/assets/shucked.JPG',
+    status: "seen"
+  },
+  {
+    title: "Six",
+    image: '/my-svelte-app/assets/six.JPG',
+    status: "seen"
+  },
+  {
+    title: "Slava's Snowshow",
+    image: '/my-svelte-app/assets/slava.JPG',
+    status: "seen"
+  },
+  {
+    title: "Spamalot",
+    image: '/my-svelte-app/assets/spamalot.JPG',
+    status: "seen"
+  },
+  {
+    title: "SpongeBob SquarePants",
+    image: '/my-svelte-app/assets/spongebob.JPG',
+    status: "seen"
+  },
+  {
+    title: "Suffs",
+    image: '/my-svelte-app/assets/suffs.JPG',
+    status: "seen"
+  },
+  {
+    title: "Sweeney Todd",
+    image: '/my-svelte-app/assets/sweeneytodd.JPG',
+    status: "seen"
+  },
+  {
+    title: "The Illusionists - Magic of the Holidays",
+    image: '/my-svelte-app/assets/illusionists.png',
+    status: "seen"
+  },
+  {
+    title: "The Lion King",
+    image: '/my-svelte-app/assets/lionking.png',
+    status: "seen"
+  },
+  {
+    title: "The Wiz",
+    image: '/my-svelte-app/assets/wiz.JPG',
+    status: "seen"
+  },
+  {
+    title: "Water for Elephants",
+    image: '/my-svelte-app/assets/elephants.JPG',
+    status: "seen"
+  },
+  {
+    title: "Wicked",
+    image: '/my-svelte-app/assets/wicked.JPG',
+    status: "seen"
+  },
+  {
+    title: "Dear Evan Hansen",
+    image: '/my-svelte-app/assets/evan.jpeg',
+    status: "want to see"
+  },
+  {
+    title: "Death Becomes Her",
+    image: '/my-svelte-app/assets/dbh.jpeg',
+    status: "want to see"
+  },
+  {
+    title: "Hell's Kitchen",
+    image: '/my-svelte-app/assets/hellskitchen.jpeg',
+    status: "want to see"
+  },
+  {
+    title: "MJ",
+    image: '/my-svelte-app/assets/mj.JPG',
+    status: "want to see"
+  },
+  {
+    title: "Moulin Rouge",
+    image: '/my-svelte-app/assets/moulin.JPG',
+    status: "want to see"
+  },
+  {
+    title: "Once Upon a One More Time",
+    image: '/my-svelte-app/assets/onemoretime.JPG',
+    status: "want to see"
+  },
+  {
+    title: "Sunset Boulevard",
+    image: '/my-svelte-app/assets/sunset.jpeg',
+    status: "want to see"
+  },
+  {
+    title: "The Outsiders",
+    image: '/my-svelte-app/assets/outsiders.JPG',
+    status: "want to see"
+  },
+  {
+    title: "The Phantom of the Opera",
+    image: '/my-svelte-app/assets/phantom.jpeg',
+    status: "want to see"
+  }
+];
 
 </script> 
 
@@ -220,7 +229,21 @@
 
     <h1 class = "main-heading">Broadway Shows 🎭</h1>
 
-    <img src = "./src/assets/broadway.jpg" alt = "Times square at night" class = "main-photo"/>
+  <div>
+    <button 
+        class = "image-button" 
+        on:click = {handleConfettiClick} 
+        aria-label = "Celebrate with confetti"
+        style = "background: none; border: none; padding: 0; cursor: pointer;"
+      >
+        <img
+          src = "/my-svelte-app/assets/broadway.jpg"
+          alt = "Times square at night"
+          class = "main-photo"
+        />
+    </button>
+    <div class = "click-hint">↑ Click Me! ↑</div>
+  </div>
 
     <h2>Shows I've Seen</h2>
     <div class = "shows">
